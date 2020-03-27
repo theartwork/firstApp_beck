@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <input
+            style="width: 199%;"
+            type="text"
+            placeholder="Original Text"
+            name="txtOriginal"
+            id="txtOriginal"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="text"
+            placeholder="Search"
+            name="txtSearch"
+            id="txtSearch"
+          />
+        </td>
+        <td>
+          <input
+            type="text"
+            placeholder="Replace"
+            name="txtReplace"
+            id="txtReplace"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            onclick="replace()"
+            type="button"
+            value="Replace"
+            id="btnReplace"
+          />
+        </td>
+        <td>
+          <input onclick="trim()" type="button" value="Trim" id="btnTrim" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="text"
+            placeholder="Result"
+            name="txtResult"
+            id="txtResult"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      Copyright &copy; 2020,
+      <a href="https://theartwork.space" target="_blank">
+        theartwork <i class="fab fa-instagram fa-spin fa-1x"></i>
+      </a>
+    </div>
+    <script src="übung.js"></script>
+  </body>
+</html>
